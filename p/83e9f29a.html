@@ -1,0 +1,1851 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>markdown 进阶 | 改字体改颜色 - 米斯特乌小站</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  <meta name="keywords" content="米斯特乌 ,wuzhiping,Hexo,wuzhiping.top, hexo,米斯特乌,教程,markdown,转载">
+  <meta name="description" content="写在前面markdown 语法本身不能定义字体的大小、...">
+  <meta name="author" content="米斯特乌">
+  <link rel="icon" href="/images/icons/whale-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/images/icons/whale-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/icons/whale-icon.png" sizes="180x180">
+  <meta rel="mask-icon" href="/images/icons/Whale-logo.png" color="#333333">
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/whale-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/11.3.1/styles/purebasic.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/11.3.1/styles/shades-of-purple.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        only_post: 'true',
+        loading: '[object Object]'
+      },
+      donate: {
+        enable: true,
+        alipay: 'https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151313.png',
+        wechat: 'https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151314.png'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: true
+      },
+      preview: {
+        background: {
+          default: '',
+          api: 'https://api.yimian.xyz/img?type=wallpaper'
+        },
+        motto: {
+          default: '人生天地间，忽如远行客',
+          typing: true,
+          api: 'https://v2.jinrishici.com/one.json',
+          data_contents: '["data","content"]'
+        },
+      },
+      qrcode: {
+        enable: true,
+        type: 'url',
+        image: '',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'simple'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      },
+      search: {
+        enable: true,
+        path: '/search.xml'
+      }
+    }
+  </script>
+
+  
+
+  
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2691163_mcberl7sm5a.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2691163_jrqpv8amt7d.css">
+
+  
+
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="米斯特乌小站" type="application/atom+xml">
+</head>
+
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+    
+
+
+  <nav class="navbar">
+    <div class="left">
+      
+        <i class="iconfont iconhome j-navbar-back-home"></i>
+      
+      
+        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
+      
+        <i class="iconfont iconsearch j-navbar-search"></i>
+      
+    </div>
+    <div class="center">markdown 进阶 | 改字体改颜色</div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+      <div id="qrcode-navbar"></div>
+    
+  </nav>
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-container">
+    <div class="menu-close">
+      <i class="iconfont icon-guanbi1"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 相册</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright"><p>&copy2021-2023 <a target="_blank" href="https://m.wuzhiping.top">米斯特乌</a>&nbsp&nbsp&nbsp<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index"><i class="iconfont icon-beian"></i>粤ICP备2021089570号</a></p></div>
+    
+  </div>
+</nav>
+
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/202109062104461.png" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">markdown 进阶 | 改字体改颜色</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>八月 26, 2021</span>
+      
+        <span class="post-info-item">
+          <i class="iconfont iconeye"></i><span id="/p/83e9f29a.html" class="leancloud-counter" data-flag-title="markdown 进阶 | 改字体改颜色"></span>
+        </span>
+        <span class="post-info-item">
+          <i class="iconfont iconheart"></i><span id="/p/83e9f29a.html" class="leancloud-like" data-flag-title="markdown 进阶 | 改字体改颜色"></span>
+        </span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>6577</span>
+    </div>
+  </div>
+</section>
+
+    <section class="main">
+      <!-- 找到这里，添加代码 -->
+      
+      <!-- 到这里结束 -->
+      <section class="content">
+        
+          <p>通过 HTML 语言，实现 markdown 语法字体进阶功能</p>
+        
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>markdown 语法本身不能定义字体的大小、颜色等，但通过 HTML 语言，可以实现上述效果。</p>
+<h2 id="字体改造"><a href="#字体改造" class="headerlink" title="字体改造"></a>字体改造</h2><h3 id="改字体"><a href="#改字体" class="headerlink" title="改字体"></a>改字体</h3><p>借助 HTML 中的 <code>&lt;font&gt;</code> 实现:</p>
+<blockquote>
+<p><font face="黑体">我是黑体字</font></p>
+<p><font face="微软雅黑">我是微软雅黑</font></p>
+<p><font face="STCAIYUN">我是华文彩云</font></p>
+</blockquote>
+<p>对应的代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">&quot;黑体&quot;</span>&gt;</span>我是黑体字<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">&quot;微软雅黑&quot;</span>&gt;</span>我是微软雅黑<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">&quot;STCAIYUN&quot;</span>&gt;</span>我是华文彩云<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="改字号大小"><a href="#改字号大小" class="headerlink" title="改字号大小"></a>改字号大小</h3><p>修改 <code>size</code>的值，取值从 1 到 7 ，浏览器默认值是 3</p>
+<blockquote>
+<p><font size=7>7号字体</font></p>
+<p><font size=6>6号字体</font></p>
+<p><font size=5>5号字体</font></p>
+<p><font size=4>4号字体</font></p>
+<p><font size=3>3号字体</font></p>
+<p><font size=2>2号字体</font></p>
+<p><font size=1>1号字体</font></p>
+</blockquote>
+<h3 id="改字体颜色"><a href="#改字体颜色" class="headerlink" title="改字体颜色"></a>改字体颜色</h3><blockquote>
+<p><font color=blue>蓝色</font></p>
+<p><font color=#0000FF>这也是蓝色</font></p>
+</blockquote>
+<p>对应的代码如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">blue</span>&gt;</span>蓝色<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">#0000FF</span>&gt;</span>这也是蓝色<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="混合使用"><a href="#混合使用" class="headerlink" title="混合使用"></a>混合使用</h3><p>同时改变</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">#0099ff</span> <span class="hljs-attr">size</span>=<span class="hljs-string">5</span> <span class="hljs-attr">face</span>=<span class="hljs-string">&quot;黑体&quot;</span>&gt;</span>color=#0099ff size=72 face=&quot;黑体&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p><font color=#0099ff size=5 face="黑体">color&#x3D;#0099ff size&#x3D;72 face&#x3D;”黑体”</font></p>
+</blockquote>
+<h3 id="改字体的背景色"><a href="#改字体的背景色" class="headerlink" title="改字体的背景色"></a>改字体的背景色</h3><p>效果预览：</p>
+<table><tr><td bgcolor=yellow>背景色yellow</td></tr></table>
+
+<p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">bgcolor</span>=<span class="hljs-string">yellow</span>&gt;</span>背景色yellow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="附：颜色名速查表"><a href="#附：颜色名速查表" class="headerlink" title="附：颜色名速查表"></a>附：颜色名速查表</h2><div class="table-wrapper"><table>
+<tbody>
+<tr><th>颜色名</th><th>十六进制颜色值</th><th>颜色</th></tr>
+<tr>
+<td><span style="color: rgba(240, 248, 255, 1)">AliceBlue</span></td>
+<td><span style="color: rgba(240, 248, 255, 1)">#F0F8FF</span></td>
+<td bgcolor="#F0F8FF">rgb(240, 248, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(250, 235, 215, 1)">AntiqueWhite</span></td>
+<td><span style="color: rgba(250, 235, 215, 1)">#FAEBD7</span></td>
+<td bgcolor="#FAEBD7">rgb(250, 235, 215)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 255, 255, 1)">Aqua</span></td>
+<td><span style="color: rgba(0, 255, 255, 1)">#00FFFF</span></td>
+<td bgcolor="#00FFFF">rgb(0, 255, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(127, 255, 212, 1)">Aquamarine</span></td>
+<td><span style="color: rgba(127, 255, 212, 1)">#7FFFD4</span></td>
+<td bgcolor="#7FFFD4">rgb(127, 255, 212)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(240, 255, 255, 1)">Azure</span></td>
+<td><span style="color: rgba(240, 255, 255, 1)">#F0FFFF</span></td>
+<td bgcolor="#F0FFFF">rgb(240, 255, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(245, 245, 220, 1)">Beige</span></td>
+<td><span style="color: rgba(245, 245, 220, 1)">#F5F5DC</span></td>
+<td bgcolor="#F5F5DC">rgb(245, 245, 220)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 228, 196, 1)">Bisque</span></td>
+<td><span style="color: rgba(255, 228, 196, 1)">#FFE4C4</span></td>
+<td bgcolor="#FFE4C4">rgb(255, 228, 196)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 0, 0, 1)">Black</span></td>
+<td><span style="color: rgba(0, 0, 0, 1)">#000000</span></td>
+<td bgcolor="#000000">rgb(0, 0, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 235, 205, 1)">BlanchedAlmond</span></td>
+<td><span style="color: rgba(255, 235, 205, 1)">#FFEBCD</span></td>
+<td bgcolor="#FFEBCD">rgb(255, 235, 205)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 0, 255, 1)">Blue</span></td>
+<td><span style="color: rgba(0, 0, 255, 1)">#0000FF</span></td>
+<td bgcolor="#0000FF">rgb(0, 0, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(138, 43, 226, 1)">BlueViolet</span></td>
+<td><span style="color: rgba(138, 43, 226, 1)">#8A2BE2</span></td>
+<td bgcolor="#8A2BE2">rgb(138, 43, 226)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(165, 42, 42, 1)">Brown</span></td>
+<td><span style="color: rgba(165, 42, 42, 1)">#A52A2A</span></td>
+<td bgcolor="#A52A2A">rgb(165, 42, 42)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(222, 184, 135, 1)">BurlyWood</span></td>
+<td><span style="color: rgba(222, 184, 135, 1)">#DEB887</span></td>
+<td bgcolor="#DEB887">rgb(222, 184, 135)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(95, 158, 160, 1)">CadetBlue</span></td>
+<td><span style="color: rgba(95, 158, 160, 1)">#5F9EA0</span></td>
+<td bgcolor="#5F9EA0">rgb(95, 158, 160)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(127, 255, 0, 1)">Chartreuse</span></td>
+<td><span style="color: rgba(127, 255, 0, 1)">#7FFF00</span></td>
+<td bgcolor="#7FFF00">rgb(127, 255, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(210, 105, 30, 1)">Chocolate</span></td>
+<td><span style="color: rgba(210, 105, 30, 1)">#D2691E</span></td>
+<td bgcolor="#D2691E">rgb(210, 105, 30)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 127, 80, 1)">Coral</span></td>
+<td><span style="color: rgba(255, 127, 80, 1)">#FF7F50</span></td>
+<td bgcolor="#FF7F50">rgb(255, 127, 80)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(100, 149, 237, 1)">CornflowerBlue</span></td>
+<td><span style="color: rgba(100, 149, 237, 1)">#6495ED</span></td>
+<td bgcolor="#6495ED">rgb(100, 149, 237)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 248, 220, 1)">Cornsilk</span></td>
+<td><span style="color: rgba(255, 248, 220, 1)">#FFF8DC</span></td>
+<td bgcolor="#FFF8DC">rgb(255, 248, 220)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(220, 20, 60, 1)">Crimson</span></td>
+<td><span style="color: rgba(220, 20, 60, 1)">#DC143C</span></td>
+<td bgcolor="#DC143C">rgb(220, 20, 60)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 255, 255, 1)">Cyan</span></td>
+<td><span style="color: rgba(0, 255, 255, 1)">#00FFFF</span></td>
+<td bgcolor="#00FFFF">rgb(0, 255, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 0, 139, 1)">DarkBlue</span></td>
+<td><span style="color: rgba(0, 0, 139, 1)">#00008B</span></td>
+<td bgcolor="#00008B">rgb(0, 0, 139)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 139, 139, 1)">DarkCyan</span></td>
+<td><span style="color: rgba(0, 139, 139, 1)">#008B8B</span></td>
+<td bgcolor="#008B8B">rgb(0, 139, 139)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(184, 134, 11, 1)">DarkGoldenRod</span></td>
+<td><span style="color: rgba(184, 134, 11, 1)">#B8860B</span></td>
+<td bgcolor="#B8860B">rgb(184, 134, 11)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(169, 169, 169, 1)">DarkGray</span></td>
+<td><span style="color: rgba(169, 169, 169, 1)">#A9A9A9</span></td>
+<td bgcolor="#A9A9A9">rgb(169, 169, 169)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 100, 0, 1)">DarkGreen</span></td>
+<td><span style="color: rgba(0, 100, 0, 1)">#006400</span></td>
+<td bgcolor="#006400">rgb(0, 100, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(189, 183, 107, 1)">DarkKhaki</span></td>
+<td><span style="color: rgba(189, 183, 107, 1)">#BDB76B</span></td>
+<td bgcolor="#BDB76B">rgb(189, 183, 107)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(139, 0, 139, 1)">DarkMagenta</span></td>
+<td><span style="color: rgba(139, 0, 139, 1)">#8B008B</span></td>
+<td bgcolor="#8B008B">rgb(139, 0, 139)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(85, 107, 47, 1)">DarkOliveGreen</span></td>
+<td><span style="color: rgba(85, 107, 47, 1)">#556B2F</span></td>
+<td bgcolor="#556B2F">rgb(85, 107, 47)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 140, 0, 1)">Darkorange</span></td>
+<td><span style="color: rgba(255, 140, 0, 1)">#FF8C00</span></td>
+<td bgcolor="#FF8C00">rgb(255, 140, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(153, 50, 204, 1)">DarkOrchid</span></td>
+<td><span style="color: rgba(153, 50, 204, 1)">#9932CC</span></td>
+<td bgcolor="#9932CC">rgb(153, 50, 204)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(139, 0, 0, 1)">DarkRed</span></td>
+<td><span style="color: rgba(139, 0, 0, 1)">#8B0000</span></td>
+<td bgcolor="#8B0000">rgb(139, 0, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(233, 150, 122, 1)">DarkSalmon</span></td>
+<td><span style="color: rgba(233, 150, 122, 1)">#E9967A</span></td>
+<td bgcolor="#E9967A">rgb(233, 150, 122)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(143, 188, 143, 1)">DarkSeaGreen</span></td>
+<td><span style="color: rgba(143, 188, 143, 1)">#8FBC8F</span></td>
+<td bgcolor="#8FBC8F">rgb(143, 188, 143)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(72, 61, 139, 1)">DarkSlateBlue</span></td>
+<td><span style="color: rgba(72, 61, 139, 1)">#483D8B</span></td>
+<td bgcolor="#483D8B">rgb(72, 61, 139)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(47, 79, 79, 1)">DarkSlateGray</span></td>
+<td><span style="color: rgba(47, 79, 79, 1)">#2F4F4F</span></td>
+<td bgcolor="#2F4F4F">rgb(47, 79, 79)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 206, 209, 1)">DarkTurquoise</span></td>
+<td><span style="color: rgba(0, 206, 209, 1)">#00CED1</span></td>
+<td bgcolor="#00CED1">rgb(0, 206, 209)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(148, 0, 211, 1)">DarkViolet</span></td>
+<td><span style="color: rgba(148, 0, 211, 1)">#9400D3</span></td>
+<td bgcolor="#9400D3">rgb(148, 0, 211)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 20, 147, 1)">DeepPink</span></td>
+<td><span style="color: rgba(255, 20, 147, 1)">#FF1493</span></td>
+<td bgcolor="#FF1493">rgb(255, 20, 147)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 191, 255, 1)">DeepSkyBlue</span></td>
+<td><span style="color: rgba(0, 191, 255, 1)">#00BFFF</span></td>
+<td bgcolor="#00BFFF">rgb(0, 191, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(105, 105, 105, 1)">DimGray</span></td>
+<td><span style="color: rgba(105, 105, 105, 1)">#696969</span></td>
+<td bgcolor="#696969">rgb(105, 105, 105)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(30, 144, 255, 1)">DodgerBlue</span></td>
+<td><span style="color: rgba(30, 144, 255, 1)">#1E90FF</span></td>
+<td bgcolor="#1E90FF">rgb(30, 144, 255)</td>
+
+
+</tr>
+<tr>
+<td><span>Feldspar</span></td>
+<td><span style="color: rgba(209, 146, 117, 1)">#D19275</span></td>
+<td bgcolor="#D19275">rgb(209, 146, 117)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(178, 34, 34, 1)">FireBrick</span></td>
+<td><span style="color: rgba(178, 34, 34, 1)">#B22222</span></td>
+<td bgcolor="#B22222">rgb(178, 34, 34)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 250, 240, 1)">FloralWhite</span></td>
+<td><span style="color: rgba(255, 250, 240, 1)">#FFFAF0</span></td>
+<td bgcolor="#FFFAF0">rgb(255, 250, 240)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(34, 139, 34, 1)">ForestGreen</span></td>
+<td><span style="color: rgba(34, 139, 34, 1)">#228B22</span></td>
+<td bgcolor="#228B22">rgb(34, 139, 34)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 0, 255, 1)">Fuchsia</span></td>
+<td><span style="color: rgba(255, 0, 255, 1)">#FF00FF</span></td>
+<td bgcolor="#FF00FF">rgb(255, 0, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(220, 220, 220, 1)">Gainsboro</span></td>
+<td><span style="color: rgba(220, 220, 220, 1)">#DCDCDC</span></td>
+<td bgcolor="#DCDCDC">rgb(220, 220, 220)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(248, 248, 255, 1)">GhostWhite</span></td>
+<td><span style="color: rgba(248, 248, 255, 1)">#F8F8FF</span></td>
+<td bgcolor="#F8F8FF">rgb(248, 248, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 215, 0, 1)">Gold</span></td>
+<td><span style="color: rgba(255, 215, 0, 1)">#FFD700</span></td>
+<td bgcolor="#FFD700">rgb(255, 215, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(218, 165, 32, 1)">GoldenRod</span></td>
+<td><span style="color: rgba(218, 165, 32, 1)">#DAA520</span></td>
+<td bgcolor="#DAA520">rgb(218, 165, 32)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(128, 128, 128, 1)">Gray</span></td>
+<td><span style="color: rgba(128, 128, 128, 1)">#808080</span></td>
+<td bgcolor="#808080">rgb(128, 128, 128)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 128, 0, 1)">Green</span></td>
+<td><span style="color: rgba(0, 128, 0, 1)">#008000</span></td>
+<td bgcolor="#008000">rgb(0, 128, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(173, 255, 47, 1)">GreenYellow</span></td>
+<td><span style="color: rgba(173, 255, 47, 1)">#ADFF2F</span></td>
+<td bgcolor="#ADFF2F">rgb(173, 255, 47)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(240, 255, 240, 1)">HoneyDew</span></td>
+<td><span style="color: rgba(240, 255, 240, 1)">#F0FFF0</span></td>
+<td bgcolor="#F0FFF0">rgb(240, 255, 240)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 105, 180, 1)">HotPink</span></td>
+<td><span style="color: rgba(255, 105, 180, 1)">#FF69B4</span></td>
+<td bgcolor="#FF69B4">rgb(255, 105, 180)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(205, 92, 92, 1)">IndianRed</span></td>
+<td><span style="color: rgba(205, 92, 92, 1)">#CD5C5C</span></td>
+<td bgcolor="#CD5C5C">rgb(205, 92, 92)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(75, 0, 130, 1)">Indigo</span></td>
+<td><span style="color: rgba(75, 0, 130, 1)">#4B0082</span></td>
+<td bgcolor="#4B0082">rgb(75, 0, 130)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 255, 240, 1)">Ivory</span></td>
+<td><span style="color: rgba(255, 255, 240, 1)">#FFFFF0</span></td>
+<td bgcolor="#FFFFF0">rgb(255, 255, 240)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(240, 230, 140, 1)">Khaki</span></td>
+<td><span style="color: rgba(240, 230, 140, 1)">#F0E68C</span></td>
+<td bgcolor="#F0E68C">rgb(240, 230, 140)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(230, 230, 250, 1)">Lavender</span></td>
+<td><span style="color: rgba(230, 230, 250, 1)">#E6E6FA</span></td>
+<td bgcolor="#E6E6FA">rgb(230, 230, 250)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 240, 245, 1)">LavenderBlush</span></td>
+<td><span style="color: rgba(255, 240, 245, 1)">#FFF0F5</span></td>
+<td bgcolor="#FFF0F5">rgb(255, 240, 245)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(124, 252, 0, 1)">LawnGreen</span></td>
+<td><span style="color: rgba(124, 252, 0, 1)">#7CFC00</span></td>
+<td bgcolor="#7CFC00">rgb(124, 252, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 250, 205, 1)">LemonChiffon</span></td>
+<td><span style="color: rgba(255, 250, 205, 1)">#FFFACD</span></td>
+<td bgcolor="#FFFACD">rgb(255, 250, 205)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(173, 216, 230, 1)">LightBlue</span></td>
+<td><span style="color: rgba(173, 216, 230, 1)">#ADD8E6</span></td>
+<td bgcolor="#ADD8E6">rgb(173, 216, 230)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(240, 128, 128, 1)">LightCoral</span></td>
+<td><span style="color: rgba(240, 128, 128, 1)">#F08080</span></td>
+<td bgcolor="#F08080">rgb(240, 128, 128)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(224, 255, 255, 1)">LightCyan</span></td>
+<td><span style="color: rgba(224, 255, 255, 1)">#E0FFFF</span></td>
+<td bgcolor="#E0FFFF">rgb(224, 255, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(250, 250, 210, 1)">LightGoldenRodYellow</span></td>
+<td><span style="color: rgba(250, 250, 210, 1)">#FAFAD2</span></td>
+<td bgcolor="#FAFAD2">rgb(250, 250, 210)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(211, 211, 211, 1)">LightGrey</span></td>
+<td><span style="color: rgba(211, 211, 211, 1)">#D3D3D3</span></td>
+<td bgcolor="#D3D3D3">rgb(211, 211, 211)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(144, 238, 144, 1)">LightGreen</span></td>
+<td><span style="color: rgba(144, 238, 144, 1)">#90EE90</span></td>
+<td bgcolor="#90EE90">rgb(144, 238, 144)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 182, 193, 1)">LightPink</span></td>
+<td><span style="color: rgba(255, 182, 193, 1)">#FFB6C1</span></td>
+<td bgcolor="#FFB6C1">rgb(255, 182, 193)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 160, 122, 1)">LightSalmon</span></td>
+<td><span style="color: rgba(255, 160, 122, 1)">#FFA07A</span></td>
+<td bgcolor="#FFA07A">rgb(255, 160, 122)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(32, 178, 170, 1)">LightSeaGreen</span></td>
+<td><span style="color: rgba(32, 178, 170, 1)">#20B2AA</span></td>
+<td bgcolor="#20B2AA">rgb(32, 178, 170)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(135, 206, 250, 1)">LightSkyBlue</span></td>
+<td><span style="color: rgba(135, 206, 250, 1)">#87CEFA</span></td>
+<td bgcolor="#87CEFA">rgb(135, 206, 250)</td>
+
+
+</tr>
+<tr>
+<td><span>LightSlateBlue</span></td>
+<td><span style="color: rgba(132, 112, 255, 1)">#8470FF</span></td>
+<td bgcolor="#8470FF">rgb(132, 112, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(119, 136, 153, 1)">LightSlateGray</span></td>
+<td><span style="color: rgba(119, 136, 153, 1)">#778899</span></td>
+<td bgcolor="#778899">rgb(119, 136, 153)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(176, 196, 222, 1)">LightSteelBlue</span></td>
+<td><span style="color: rgba(176, 196, 222, 1)">#B0C4DE</span></td>
+<td bgcolor="#B0C4DE">rgb(176, 196, 222)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 255, 224, 1)">LightYellow</span></td>
+<td><span style="color: rgba(255, 255, 224, 1)">#FFFFE0</span></td>
+<td bgcolor="#FFFFE0">rgb(255, 255, 224)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 255, 0, 1)">Lime</span></td>
+<td><span style="color: rgba(0, 255, 0, 1)">#00FF00</span></td>
+<td bgcolor="#00FF00">rgb(0, 255, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(50, 205, 50, 1)">LimeGreen</span></td>
+<td><span style="color: rgba(50, 205, 50, 1)">#32CD32</span></td>
+<td bgcolor="#32CD32">rgb(50, 205, 50)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(250, 240, 230, 1)">Linen</span></td>
+<td><span style="color: rgba(250, 240, 230, 1)">#FAF0E6</span></td>
+<td bgcolor="#FAF0E6">rgb(250, 240, 230)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 0, 255, 1)">Magenta</span></td>
+<td><span style="color: rgba(255, 0, 255, 1)">#FF00FF</span></td>
+<td bgcolor="#FF00FF">rgb(255, 0, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(128, 0, 0, 1)">Maroon</span></td>
+<td><span style="color: rgba(128, 0, 0, 1)">#800000</span></td>
+<td bgcolor="#800000">rgb(128, 0, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(102, 205, 170, 1)">MediumAquaMarine</span></td>
+<td><span style="color: rgba(102, 205, 170, 1)">#66CDAA</span></td>
+<td bgcolor="#66CDAA">rgb(102, 205, 170)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 0, 205, 1)">MediumBlue</span></td>
+<td><span style="color: rgba(0, 0, 205, 1)">#0000CD</span></td>
+<td bgcolor="#0000CD">rgb(0, 0, 205)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(186, 85, 211, 1)">MediumOrchid</span></td>
+<td><span style="color: rgba(186, 85, 211, 1)">#BA55D3</span></td>
+<td bgcolor="#BA55D3">rgb(186, 85, 211)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(147, 112, 219, 1)">MediumPurple</span></td>
+<td><span style="color: rgba(147, 112, 216, 1)">#9370D8</span></td>
+<td bgcolor="#9370D8">rgb(147, 112, 216)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(60, 179, 113, 1)">MediumSeaGreen</span></td>
+<td><span style="color: rgba(60, 179, 113, 1)">#3CB371</span></td>
+<td bgcolor="#3CB371">rgb(60, 179, 113)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(123, 104, 238, 1)">MediumSlateBlue</span></td>
+<td><span style="color: rgba(123, 104, 238, 1)">#7B68EE</span></td>
+<td bgcolor="#7B68EE">rgb(123, 104, 238)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 250, 154, 1)">MediumSpringGreen</span></td>
+<td><span style="color: rgba(0, 250, 154, 1)">#00FA9A</span></td>
+<td bgcolor="#00FA9A">rgb(0, 250, 154)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(72, 209, 204, 1)">MediumTurquoise</span></td>
+<td><span style="color: rgba(72, 209, 204, 1)">#48D1CC</span></td>
+<td bgcolor="#48D1CC">rgb(72, 209, 204)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(199, 21, 133, 1)">MediumVioletRed</span></td>
+<td><span style="color: rgba(199, 21, 133, 1)">#C71585</span></td>
+<td bgcolor="#C71585">rgb(199, 21, 133)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(25, 25, 112, 1)">MidnightBlue</span></td>
+<td><span style="color: rgba(25, 25, 112, 1)">#191970</span></td>
+<td bgcolor="#191970">rgb(25, 25, 112)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(245, 255, 250, 1)">MintCream</span></td>
+<td><span style="color: rgba(245, 255, 250, 1)">#F5FFFA</span></td>
+<td bgcolor="#F5FFFA">rgb(245, 255, 250)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 228, 225, 1)">MistyRose</span></td>
+<td><span style="color: rgba(255, 228, 225, 1)">#FFE4E1</span></td>
+<td bgcolor="#FFE4E1">rgb(255, 228, 225)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 228, 181, 1)">Moccasin</span></td>
+<td><span style="color: rgba(255, 228, 181, 1)">#FFE4B5</span></td>
+<td bgcolor="#FFE4B5">rgb(255, 228, 181)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 222, 173, 1)">NavajoWhite</span></td>
+<td><span style="color: rgba(255, 222, 173, 1)">#FFDEAD</span></td>
+<td bgcolor="#FFDEAD">rgb(255, 222, 173)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 0, 128, 1)">Navy</span></td>
+<td><span style="color: rgba(0, 0, 128, 1)">#000080</span></td>
+<td bgcolor="#000080">rgb(0, 0, 128)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(253, 245, 230, 1)">OldLace</span></td>
+<td><span style="color: rgba(253, 245, 230, 1)">#FDF5E6</span></td>
+<td bgcolor="#FDF5E6">rgb(253, 245, 230)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(128, 128, 0, 1)">Olive</span></td>
+<td><span style="color: rgba(128, 128, 0, 1)">#808000</span></td>
+<td bgcolor="#808000">rgb(128, 128, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(107, 142, 35, 1)">OliveDrab</span></td>
+<td><span style="color: rgba(107, 142, 35, 1)">#6B8E23</span></td>
+<td bgcolor="#6B8E23">rgb(107, 142, 35)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 165, 0, 1)">Orange</span></td>
+<td><span style="color: rgba(255, 165, 0, 1)">#FFA500</span></td>
+<td bgcolor="#FFA500">rgb(255, 165, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 69, 0, 1)">OrangeRed</span></td>
+<td><span style="color: rgba(255, 69, 0, 1)">#FF4500</span></td>
+<td bgcolor="#FF4500">rgb(255, 69, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(218, 112, 214, 1)">Orchid</span></td>
+<td><span style="color: rgba(218, 112, 214, 1)">#DA70D6</span></td>
+<td bgcolor="#DA70D6">rgb(218, 112, 214)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(238, 232, 170, 1)">PaleGoldenRod</span></td>
+<td><span style="color: rgba(238, 232, 170, 1)">#EEE8AA</span></td>
+<td bgcolor="#EEE8AA">rgb(238, 232, 170)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(152, 251, 152, 1)">PaleGreen</span></td>
+<td><span style="color: rgba(152, 251, 152, 1)">#98FB98</span></td>
+<td bgcolor="#98FB98">rgb(152, 251, 152)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(175, 238, 238, 1)">PaleTurquoise</span></td>
+<td><span style="color: rgba(175, 238, 238, 1)">#AFEEEE</span></td>
+<td bgcolor="#AFEEEE">rgb(175, 238, 238)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(219, 112, 147, 1)">PaleVioletRed</span></td>
+<td><span style="color: rgba(216, 112, 147, 1)">#D87093</span></td>
+<td bgcolor="#D87093">rgb(216, 112, 147)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 239, 213, 1)">PapayaWhip</span></td>
+<td><span style="color: rgba(255, 239, 213, 1)">#FFEFD5</span></td>
+<td bgcolor="#FFEFD5">rgb(255, 239, 213)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 218, 185, 1)">PeachPuff</span></td>
+<td><span style="color: rgba(255, 218, 185, 1)">#FFDAB9</span></td>
+<td bgcolor="#FFDAB9">rgb(255, 218, 185)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(205, 133, 63, 1)">Peru</span></td>
+<td><span style="color: rgba(205, 133, 63, 1)">#CD853F</span></td>
+<td bgcolor="#CD853F">rgb(205, 133, 63)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 192, 203, 1)">Pink</span></td>
+<td><span style="color: rgba(255, 192, 203, 1)">#FFC0CB</span></td>
+<td bgcolor="#FFC0CB">rgb(255, 192, 203)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(221, 160, 221, 1)">Plum</span></td>
+<td><span style="color: rgba(221, 160, 221, 1)">#DDA0DD</span></td>
+<td bgcolor="#DDA0DD">rgb(221, 160, 221)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(176, 224, 230, 1)">PowderBlue</span></td>
+<td><span style="color: rgba(176, 224, 230, 1)">#B0E0E6</span></td>
+<td bgcolor="#B0E0E6">rgb(176, 224, 230)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(128, 0, 128, 1)">Purple</span></td>
+<td><span style="color: rgba(128, 0, 128, 1)">#800080</span></td>
+<td bgcolor="#800080">rgb(128, 0, 128)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 0, 0, 1)">Red</span></td>
+<td><span style="color: rgba(255, 0, 0, 1)">#FF0000</span></td>
+<td bgcolor="#FF0000">rgb(255, 0, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(188, 143, 143, 1)">RosyBrown</span></td>
+<td><span style="color: rgba(188, 143, 143, 1)">#BC8F8F</span></td>
+<td bgcolor="#BC8F8F">rgb(188, 143, 143)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(65, 105, 225, 1)">RoyalBlue</span></td>
+<td><span style="color: rgba(65, 105, 225, 1)">#4169E1</span></td>
+<td bgcolor="#4169E1">rgb(65, 105, 225)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(139, 69, 19, 1)">SaddleBrown</span></td>
+<td><span style="color: rgba(139, 69, 19, 1)">#8B4513</span></td>
+<td bgcolor="#8B4513">rgb(139, 69, 19)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(250, 128, 114, 1)">Salmon</span></td>
+<td><span style="color: rgba(250, 128, 114, 1)">#FA8072</span></td>
+<td bgcolor="#FA8072">rgb(250, 128, 114)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(244, 164, 96, 1)">SandyBrown</span></td>
+<td><span style="color: rgba(244, 164, 96, 1)">#F4A460</span></td>
+<td bgcolor="#F4A460">rgb(244, 164, 96)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(46, 139, 87, 1)">SeaGreen</span></td>
+<td><span style="color: rgba(46, 139, 87, 1)">#2E8B57</span></td>
+<td bgcolor="#2E8B57">rgb(46, 139, 87)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 245, 238, 1)">SeaShell</span></td>
+<td><span style="color: rgba(255, 245, 238, 1)">#FFF5EE</span></td>
+<td bgcolor="#FFF5EE">rgb(255, 245, 238)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(160, 82, 45, 1)">Sienna</span></td>
+<td><span style="color: rgba(160, 82, 45, 1)">#A0522D</span></td>
+<td bgcolor="#A0522D">rgb(160, 82, 45)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(192, 192, 192, 1)">Silver</span></td>
+<td><span style="color: rgba(192, 192, 192, 1)">#C0C0C0</span></td>
+<td bgcolor="#C0C0C0">rgb(192, 192, 192)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(135, 206, 235, 1)">SkyBlue</span></td>
+<td><span style="color: rgba(135, 206, 235, 1)">#87CEEB</span></td>
+<td bgcolor="#87CEEB">rgb(135, 206, 235)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(106, 90, 205, 1)">SlateBlue</span></td>
+<td><span style="color: rgba(106, 90, 205, 1)">#6A5ACD</span></td>
+<td bgcolor="#6A5ACD">rgb(106, 90, 205)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(112, 128, 144, 1)">SlateGray</span></td>
+<td><span style="color: rgba(112, 128, 144, 1)">#708090</span></td>
+<td bgcolor="#708090">rgb(112, 128, 144)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 250, 250, 1)">Snow</span></td>
+<td><span style="color: rgba(255, 250, 250, 1)">#FFFAFA</span></td>
+<td bgcolor="#FFFAFA">rgb(255, 250, 250)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 255, 127, 1)">SpringGreen</span></td>
+<td><span style="color: rgba(0, 255, 127, 1)">#00FF7F</span></td>
+<td bgcolor="#00FF7F">rgb(0, 255, 127)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(70, 130, 180, 1)">SteelBlue</span></td>
+<td><span style="color: rgba(70, 130, 180, 1)">#4682B4</span></td>
+<td bgcolor="#4682B4">rgb(70, 130, 180)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(210, 180, 140, 1)">Tan</span></td>
+<td><span style="color: rgba(210, 180, 140, 1)">#D2B48C</span></td>
+<td bgcolor="#D2B48C">rgb(210, 180, 140)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(0, 128, 128, 1)">Teal</span></td>
+<td><span style="color: rgba(0, 128, 128, 1)">#008080</span></td>
+<td bgcolor="#008080">rgb(0, 128, 128)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(216, 191, 216, 1)">Thistle</span></td>
+<td><span style="color: rgba(216, 191, 216, 1)">#D8BFD8</span></td>
+<td bgcolor="#D8BFD8">rgb(216, 191, 216)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 99, 71, 1)">Tomato</span></td>
+<td><span style="color: rgba(255, 99, 71, 1)">#FF6347</span></td>
+<td bgcolor="#FF6347">rgb(255, 99, 71)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(64, 224, 208, 1)">Turquoise</span></td>
+<td><span style="color: rgba(64, 224, 208, 1)">#40E0D0</span></td>
+<td bgcolor="#40E0D0">rgb(64, 224, 208)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(238, 130, 238, 1)">Violet</span></td>
+<td><span style="color: rgba(238, 130, 238, 1)">#EE82EE</span></td>
+<td bgcolor="#EE82EE">rgb(238, 130, 238)</td>
+
+
+</tr>
+<tr>
+<td><span>VioletRed</span></td>
+<td><span style="color: rgba(208, 32, 144, 1)">#D02090</span></td>
+<td bgcolor="#D02090">rgb(208, 32, 144)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(245, 222, 179, 1)">Wheat</span></td>
+<td><span style="color: rgba(245, 222, 179, 1)">#F5DEB3</span></td>
+<td bgcolor="#F5DEB3">rgb(245, 222, 179)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 255, 255, 1)">White</span></td>
+<td><span style="color: rgba(255, 255, 255, 1)">#FFFFFF</span></td>
+<td bgcolor="#FFFFFF">rgb(255, 255, 255)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(245, 245, 245, 1)">WhiteSmoke</span></td>
+<td><span style="color: rgba(245, 245, 245, 1)">#F5F5F5</span></td>
+<td bgcolor="#F5F5F5">rgb(245, 245, 245)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(255, 255, 0, 1)">Yellow</span></td>
+<td><span style="color: rgba(255, 255, 0, 1)">#FFFF00</span></td>
+<td bgcolor="#FFFF00">rgb(255, 255, 0)</td>
+
+
+</tr>
+<tr>
+<td><span style="color: rgba(154, 205, 50, 1)">YellowGreen</span></td>
+<td><span style="color: rgba(154, 205, 50, 1)">#9ACD32</span></td>
+<td bgcolor="#9ACD32">rgb(154, 205, 50)</td>
+
+
+</tr>
+
+
+</tbody>
+
+</table></div>
+
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/stars-one/p/9502576.html">Stars-one - 博客园</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/heimu24/article/details/81189700">heimu24的博客-CSDN博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011995719/article/details/77232626">TensorSense的博客-CSDN博客</a></li>
+</ul>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><ul>
+<li>210825 init</li>
+</ul>
+
+      </section>
+      <section class="extra">
+        
+          <ul class="copyright">
+  
+    <li><strong>本文作者：</strong>米斯特乌</li>
+    <li><strong>文章标题：</strong>markdown 进阶 | 改字体改颜色</li>
+    <li><strong>本文链接：</strong><a href="https://m.wuzhiping.top/p/83e9f29a.html" title="https:&#x2F;&#x2F;m.wuzhiping.top&#x2F;p&#x2F;83e9f29a.html">https:&#x2F;&#x2F;m.wuzhiping.top&#x2F;p&#x2F;83e9f29a.html</a></li>
+    <li><strong>版权声明：</strong>博客内容采用 <i class="iconfont icon-cc"></i><strong><a target="_blank" title="署名-非商业性使用-相同方式共享 4.0 国际"href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"> BY-NC-SA 4.0</strong></a> 许可协议，转载请注明出处！</li>
+  
+</ul>
+
+        
+        
+          <section class="donate">
+  <div id="qrcode-donate">
+    <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151313.png">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont icon-zhifubao1"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont icon-weixinzhifu"></i></a>
+  </div>
+</section>
+
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E6%BA%90/" rel="tag">开源</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E5%87%86/" rel="tag">标准</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%85%8D%E8%89%B2/" rel="tag">配色</a></li></ul> 
+
+        
+  <nav class="nav">
+    <a href="/p/1b57e99d.html"><i class="iconfont iconleft"></i>Linux 内部端口转发</a>
+    <a href="/p/36e36bdb.html">markdown 进阶 | 改图片大小和位置<i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<div id="valine"></div>
+<script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  window.onload = function () {
+    var loadValine = function () {
+      new Valine({
+        el: '#valine',
+        app_id: "mmyjPto4q1jUtbNhcRHq1sdH-gzGzoHsz",
+        app_key: "68nAoGaj8ADpuMOqBEbLPOoW",
+        placeholder: "有什么问题一起交流下吧！",
+        avatar: "robohash",
+        pageSize: "6",
+        lang: "zh-CN",
+        visitor: false, //文章阅读量统计，默认关闭
+        emojiMaps: {
+            "再见": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/再见.png",
+            "呲牙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/呲牙笑.png",
+            "微笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/微笑.png",
+            "亲亲": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/亲亲.png",
+            "愤怒": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/愤怒.png",
+            "惊吓": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惊吓.png",
+            "尴尬": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/尴尬.png",
+            "捂嘴笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/捂嘴笑.png",
+            "捂脸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/捂脸.png",
+            "生病": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/生病.png",
+            "绿帽": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/绿帽.png",
+            "鼓掌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/鼓掌.png",
+            "抠鼻": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/抠鼻.png",
+            "感动": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/感动.png",
+            "吐血": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吐血.png",
+            "鬼脸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/鬼脸.png",
+            "擦汗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/擦汗.png",
+            "惊讶": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惊讶.png",
+            "恶心": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶心.png",
+            "禁言": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/禁言.png",
+            "睡觉": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/睡觉.png",
+            "笑哭": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/笑哭.png",
+            "思考": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/思考.png",
+            "疑问": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/疑问.png",
+            "奋斗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/奋斗.png",
+            "耍酷": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/耍酷.png",
+            "吵架": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吵架.png",
+            "眩晕": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/眩晕.png",
+            "哭泣": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哭泣.png",
+            "开心": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/开心.png",
+            "害羞": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/害羞.png",
+            "喜欢": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/喜欢.png",
+            "烦恼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/烦恼.png",
+            "爆炸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/爆炸.png",
+            "熬夜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熬夜.png",
+            "吃瓜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吃瓜.png",
+            "阴险": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/阴险.png",
+            "狗头": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头.png",
+            "滑稽": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽.png",
+            "被打": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/被打.png",
+            "哈士奇": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇.png",
+            "大笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/大笑.png",
+            "加班": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/加班.png",
+            "唱歌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/唱歌.png",
+            "纠结": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/纠结.png",
+            "发红包": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/发红包.png",
+            "送福": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/送福.png",
+            "牛年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/牛年进宝.png",
+            "狗头围脖": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头围脖.png",
+            "狗头花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头花.png",
+            "狗头草": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头草.png",
+            "头秃": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/头秃.png",
+            "狗头胖次": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头胖次.png",
+            "我看好你": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/我看好你.png",
+            "好的": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/好的.png",
+            "好奇": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/好奇.png",
+            "偷偷看": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/偷偷看.png",
+            "危险": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/危险.png",
+            "小丑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/小丑.png",
+            "引起不适": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/引起不适.png",
+            "滑稽喝水": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽喝水.png",
+            "熊猫": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫.png",
+            "打牌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/打牌.png",
+            "哈士奇失去意识": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇失去意识.png",
+            "应援": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/应援.png",
+            "熊猫喜欢": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫喜欢.png",
+            "疼痛": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/疼痛.png",
+            "勉强笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/勉强笑.png",
+            "看穿一切": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/看穿一切.png",
+            "滑稽狂汗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽狂汗.png",
+            "不好意思": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/不好意思.png",
+            "菜狗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/菜狗.png",
+            "难以置信": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/难以置信.png",
+            "月饼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/月饼.png",
+            "滑稽被子": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽被子.png",
+            "倚墙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/倚墙笑.png",
+            "出家人": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/出家人.png",
+            "菜狗花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/菜狗花.png",
+            "黑线": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/黑线.png",
+            "呦吼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/呦吼.png",
+            "有没有搞错": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/有没有搞错.png",
+            "打咩": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/打咩.png",
+            "扶额": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/扶额.png",
+            "深思": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/深思.png",
+            "3d眼镜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/3d眼镜.png",
+            "电话": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/电话.png",
+            "托腮": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/托腮.png",
+            "裂开": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/裂开.png",
+            "滑稽柠檬": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽柠檬.png",
+            "伞兵": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/伞兵.png",
+            "胡子": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/胡子.png",
+            "小偷": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/小偷.png",
+            "裂开": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/裂开.png",
+            "智慧的眼神": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/智慧的眼神.png",
+            "滑稽奶茶": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽奶茶.png",
+            "手机相机": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/手机相机.png",
+            "送花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/送花.png",
+            "狗头失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头失望.png",
+            "哈士奇失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇失望.png",
+            "熊猫失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫失望.png",
+            "失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/失望.png",
+            "吃手": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吃手.png",
+            "嘿哈": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/嘿哈.png",
+            "猪头": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/猪头.png",
+            "LPL": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/LPL.png",
+            "抬眼镜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/抬眼镜.png",
+            "泪奔": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/泪奔.png",
+            "熊猫意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫意外.png",
+            "EDG": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/EDG.png",
+            "傻笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/傻笑.png",
+            "狗头意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头意外.png",
+            "拜托": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/拜托.png",
+            "这是啥": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/这是啥.png",
+            "波吉": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/波吉.png",
+            "猪头意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/猪头意外.png",
+            "没招": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/没招.png",
+            "恶魔": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶魔.png",
+            "没招": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/没招.png",
+            "恶魔恐惧": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶魔恐惧.png",
+            "惬意": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惬意.png",
+            "放鞭炮": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/放鞭炮.png",
+            "beluga": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/beluga.png",
+            "老虎意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/老虎意外.png",
+            "虎年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/虎年进宝.png",
+            "财神红包": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/财神红包.png",
+            "虎年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/虎年进宝.png",
+            "痛哭": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/痛哭.png",
+            "尬笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/尬笑.png",
+            "流汗微笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/流汗微笑.png",
+            "整理发型": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/整理发型.png",
+            "击剑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/击剑.png",
+            "缺牙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/缺牙笑.png"
+          }
+        // 引入bilibili 的表情包
+          // emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+       // emojiMaps: {
+       //     "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+       //     "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        //    "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        //    "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        //    "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        //    "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+         //   "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+         //   "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+         //   "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+         //   "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+          //  "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+         //   "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+         //   "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+         //   "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+          //  "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+          //  "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+         //   "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+         //   "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+         //   "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+          //  "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+         //   "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+            // ... 更多表情
+        //} 
+      });
+    }
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        loadValine();
+      });
+    } else {
+      loadValine();
+    }
+  };
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article>
+</div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E6%94%B9%E9%80%A0"><span class="toc-text">字体改造</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E4%BD%93"><span class="toc-text">改字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E5%8F%B7%E5%A4%A7%E5%B0%8F"><span class="toc-text">改字号大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="toc-text">改字体颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E4%BD%BF%E7%94%A8"><span class="toc-text">混合使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9%E5%AD%97%E4%BD%93%E7%9A%84%E8%83%8C%E6%99%AF%E8%89%B2"><span class="toc-text">改字体的背景色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%EF%BC%9A%E9%A2%9C%E8%89%B2%E5%90%8D%E9%80%9F%E6%9F%A5%E8%A1%A8"><span class="toc-text">附：颜色名速查表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ref"><span class="toc-text">Ref</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Changelog"><span class="toc-text">Changelog</span></a></li></ol>
+  </aside>
+
+        
+      </div>
+    </div>
+  </div>
+</main>
+  <!---cc-icons代码引入--->
+<link rel="stylesheet" href="/css/cc-icons.min.css" type="text/css"  />
+<!---cc-icons代码引入--->
+
+<!---busuanzi代码引入--->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!---busuanzi代码引入--->
+
+<!---fontawesome代码引入--->
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!---fontawesome代码引入--->
+
+
+
+<footer class="footer">
+  <div class="footer-social"><a
+        href="tencent://message/?Menu=yes&uin=357735006 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a
+        href="javascript:; "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#09BB07'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconwechat-fill "></i>
+      </a><a
+        href="https://github.com/frankwuzp "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#9f7be1'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a
+        href="mailto:me@wuzhiping.top "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#EA5455'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconmail "></i>
+      </a><a
+        href="/atom.xml "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#FD9B00'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icon-rss "></i>
+      </a></div>
+  
+    <div class="footer-copyright"><p>&copy2021-2023 <a target="_blank" href="https://m.wuzhiping.top">米斯特乌</a>&nbsp&nbsp&nbsp<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index"><i class="iconfont icon-beian"></i>粤ICP备2021089570号</a></p></div>
+  
+
+<!---添加项目支持--->
+  <p>
+    <div align="center">
+    基于 <a target="_blank" href="https://hexo.io">Hexo</a> & Theme.<a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a>&nbsp|&nbsp<a rel="upyun" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" p-id="38"><img src="/images/icons/upyun_logo8.png" width="10%" height="10%" style="transform:translateX(-2px);position:relative;margin-bottom:2px;" title="又拍云CDN"></a>加速支持
+    </div>
+  </p>
+<!---添加项目支持--->
+
+<!---网站访问统计--->
+  <p>
+    <div align="center">访问量：
+    <i class="iconfont icon-eye"  aria-hidden="true"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa fa-spinner fa-spin" aria-hidden="true">
+      </i>
+    </span>&nbsp&nbsp&nbsp
+      <i class="iconfont icon-user"  aria-hidden="true"></i>
+      <span id="busuanzi_value_site_uv">
+        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+      </span>
+    </div>
+  </p>
+<!---网站访问统计--->
+
+<!--- 添加落款图标 BEGIN --->
+  <div align="center">
+    <!--- 添加CC协议 --->
+    <a target="_blank" title="署名-非商业性使用-相同方式共享" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+      <i class="cc cc-by-nc-sa" aria-hidden="true" style="font-size:36px;"></i>
+    </a>
+    <!--- 添加CC协议 --->
+    <!--- 添加亚洲诚信验证图标 BEGIN --->
+    <span title="TrustAsia 安全签章" id="myssl_seal" onclick="window.open('https://seal.trustasia.com/seal/detail?domain=m.wuzhiping.top','TrustAsia 安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center">
+      <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210731151039.png" alt="TrustAsia 安全签章" style="width:104px;height:auto;margin-bottom:28px;cursor:pointer">
+    </span>
+    <!--- 添加亚洲诚信验证图标 END --->
+    <!-- IPv6-test.com button BEGIN -->
+    <a target="_blank" href='https://ipv6-test.com/validate.php?url=referer'>
+      <img src='https://ipv6-test.com/button-ipv6-big.png' alt='ipv6 ready' title='ipv6 ready' border='0' style="width:63.5px;height:auto;margin-bottom:28px;cursor:pointer" />
+    </a>
+    <!-- IPv6-test.com button END -->
+  </div>
+<!--- 添加落款图标 END --->
+
+</footer>
+
+  
+    <div class="fab fab-plus">
+  <i class="iconfont iconplus"></i>
+</div>
+
+  <div class="fab fab-like">
+    <i class="iconfont iconheart"></i>
+  </div>
+
+
+  <div class="fab fab-daovoice">
+    <i class="iconfont iconcomment"></i>
+  </div>
+
+
+<div class="fab fab-up">
+  <i class="iconfont iconcaret-up"></i>
+</div>
+  
+  
+    <div class="scrollbar j-scrollbar">
+  <div class="scrollbar-current j-scrollbar-current"></div>
+</div>
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+  
+    <div class="search">
+  <div class="search-container">
+    <div class="search-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <div class="search-input-wrapper">
+      <i class="search-input-icon iconfont iconsearch"></i>
+      <input class="search-input" type="search" id="search-input" placeholder="Search..." autofocus autocomplete="off"
+        autocorrect="off" autocapitalize="off">
+    </div>
+    <div class="search-output" id="search-output"></div>
+  </div>
+</div>
+  
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+  <script>
+  $.getScript("//cdn.jsdelivr.net/npm/leancloud-storage@4.1.0/dist/av-min.js", () => {
+
+    AV.init({
+      appId: 'teK0draJRk9RyykEq31ItyCz-gzGzoHsz',
+      appKey: 'kYrmK1eEXlxPDYbPI5CqkTT4',
+      serverURLs: 'https://leancloud.cn/',
+    });
+
+    const Counter = AV.Object.extend("Counter");
+    const Like = AV.Object.extend("Like");
+
+    const showCount = (Counter) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud-counter").each(async (e) => {
+        const url = $(".leancloud-counter").eq(e).attr('id').trim();
+        const query = new AV.Query("Counter");
+        query.equalTo("words", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud-counter").eq(e).text(count ? count : 0);
+      });
+    }
+
+    const addCount = (Counter) => {
+      const url = $(".leancloud-counter").length === 1 ? $(".leancloud-counter").attr('id').trim() : 'https://m.wuzhiping.top';
+      var query = new Counter;
+      query.save({
+        words: url
+      });
+    }
+
+    const showLike = (Like) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud-like").each(async (e) => {
+        const url = $(".leancloud-like").eq(e).attr('id').trim();
+        const query = new AV.Query("Like");
+        query.equalTo("path", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud-like").eq(e).text(count ? count : 0);
+      });
+    }
+
+    const addLike = (Like) => {
+      const url = $(".leancloud-like").length === 1 ? $(".leancloud-like").attr('id').trim() : 'https://m.wuzhiping.top';
+      var query = new Like;
+      query.save({
+        path: url,
+        nickName: 'Anonymous'
+      });
+      $(".leancloud-like").addClass('islike');
+      $(".fab-like").children(".iconfont").removeClass("iconheart").addClass("iconheart-fill").css("color", "#eb3223");
+      ZHAOO.zui.message({ text: '谢谢你的喜欢~', type: 'success' });
+      setTimeout(() => showLike(Like), 1000);
+    }
+
+    const handleLikeClick = () => {
+      const isLike = $(".leancloud-like").length === 1 && $(".leancloud-like").hasClass('islike') ? true : false;
+      if (isLike) {
+        ZHAOO.zui.message({ text: '小心心不可以收回呢~', type: 'warning' });
+      } else {
+        addLike(Like);
+      }
+    }
+
+    $(function () {
+      addCount(Counter);
+      showCount(Counter);
+      showLike(Like);
+      $(".fab-like").on("click", function () {
+        handleLikeClick();
+      });
+    });
+
+  });
+</script>
+
+
+
+  
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i["DaoVoiceObject"] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    a.charset = "utf-8";
+    m.parentNode.insertBefore(a, m)
+  })(window, document, "script", "https://widget.daovoice.io/widget/0f81ff2f.js", "daovoice")
+  daovoice('init', {
+    app_id: "2a95adcb"
+  }, {
+    launcher: {
+      disableLauncherIcon: true,
+    },
+  });
+  daovoice('update');
+</script>
+
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+  <script defer src='https://hm.baidu.com/hm.js?16f4e30c2f02e4072c9a264f25dd421b'></script>
+
+
+
+
+
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'G-RKGGMVYC3J', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script defer src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</html>

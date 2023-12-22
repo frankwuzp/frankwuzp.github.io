@@ -1,0 +1,962 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的一小步 | 如何搭建私人博客 - 米斯特乌小站</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  <meta name="keywords" content="米斯特乌 ,wuzhiping,Hexo,wuzhiping.top, Hexo,博客,教程">
+  <meta name="description" content="Hexo简介Hexo是一款基于Node.js的静态博客...">
+  <meta name="author" content="米斯特乌">
+  <link rel="icon" href="/images/icons/whale-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/images/icons/whale-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/icons/whale-icon.png" sizes="180x180">
+  <meta rel="mask-icon" href="/images/icons/Whale-logo.png" color="#333333">
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/whale-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/11.3.1/styles/purebasic.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/11.3.1/styles/shades-of-purple.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        only_post: 'true',
+        loading: '[object Object]'
+      },
+      donate: {
+        enable: true,
+        alipay: 'https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151313.png',
+        wechat: 'https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151314.png'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: true
+      },
+      preview: {
+        background: {
+          default: '',
+          api: 'https://api.yimian.xyz/img?type=wallpaper'
+        },
+        motto: {
+          default: '人生天地间，忽如远行客',
+          typing: true,
+          api: 'https://v2.jinrishici.com/one.json',
+          data_contents: '["data","content"]'
+        },
+      },
+      qrcode: {
+        enable: true,
+        type: 'url',
+        image: '',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'simple'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      },
+      search: {
+        enable: true,
+        path: '/search.xml'
+      }
+    }
+  </script>
+
+  
+
+  
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2691163_mcberl7sm5a.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2691163_jrqpv8amt7d.css">
+
+  
+
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="米斯特乌小站" type="application/atom+xml">
+</head>
+
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+    
+
+
+  <nav class="navbar">
+    <div class="left">
+      
+        <i class="iconfont iconhome j-navbar-back-home"></i>
+      
+      
+        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
+      
+        <i class="iconfont iconsearch j-navbar-search"></i>
+      
+    </div>
+    <div class="center">我的一小步 | 如何搭建私人博客</div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+      <div id="qrcode-navbar"></div>
+    
+  </nav>
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-container">
+    <div class="menu-close">
+      <i class="iconfont icon-guanbi1"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 相册</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright"><p>&copy2021-2023 <a target="_blank" href="https://m.wuzhiping.top">米斯特乌</a>&nbsp&nbsp&nbsp<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index"><i class="iconfont icon-beian"></i>粤ICP备2021089570号</a></p></div>
+    
+  </div>
+</nav>
+
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/202108171500102.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">我的一小步 | 如何搭建私人博客</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>七月 20, 2021</span>
+      
+        <span class="post-info-item">
+          <i class="iconfont iconeye"></i><span id="/p/ddb3eb57.html" class="leancloud-counter" data-flag-title="我的一小步 | 如何搭建私人博客"></span>
+        </span>
+        <span class="post-info-item">
+          <i class="iconfont iconheart"></i><span id="/p/ddb3eb57.html" class="leancloud-like" data-flag-title="我的一小步 | 如何搭建私人博客"></span>
+        </span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>8412</span>
+    </div>
+  </div>
+</section>
+
+    <section class="main">
+      <!-- 找到这里，添加代码 -->
+      
+      <!-- 到这里结束 -->
+      <section class="content">
+        
+          <p>个人博客建站的四步走，外加进阶设置的彩蛋。</p>
+        
+        <h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，快速、简洁且高效，支持markdown语法。</p>
+<h1 id="step0：准备环境"><a href="#step0：准备环境" class="headerlink" title="step0：准备环境"></a>step0：准备环境</h1><ol>
+<li>准备git、node.js环境</li>
+</ol>
+<ul>
+<li>git官网：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li>Node.js官网：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></li>
+</ul>
+<blockquote>
+<p>Windows环境配置：使用 Node.js 官方安装程序时，需要确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）</p>
+</blockquote>
+<ol start="2">
+<li>如已完成安装，可通过如下命令验证：<code>npm -v</code>、 <code>git -v</code></li>
+</ol>
+<h1 id="step1：本地安装Hexo"><a href="#step1：本地安装Hexo" class="headerlink" title="step1：本地安装Hexo"></a>step1：本地安装Hexo</h1><p>使用命令行，一键安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+
+<h1 id="step2：初始化并验证Hexo"><a href="#step2：初始化并验证Hexo" class="headerlink" title="step2：初始化并验证Hexo"></a>step2：初始化并验证Hexo</h1><ul>
+<li>初始化当前文件夹并生成必要文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br>npm install<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>生成的文件夹结构如下</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs txt">.  <br>├── _config.yml  //网站配置信息<br>├── package.json  //安装包的版本信息记录<br>├── scaffolds  //模板文件夹<br>├── source  //资源文件夹<br>|   ├── _drafts  //草稿文件夹，不会被解析打包到`public`文件夹里<br>|   └── _posts  //文章文件夹，可在此新建`.md`文章<br>└── themes  //主题文件夹<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>三连生成Hexo预览</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean  //先清扫下，此时`public`文件夹内的内容会被清除<br>hexo g  //generate 生成静态网页文件<br>hexo clean &amp;&amp; hexo g  //上面两步也可并成一步<br>hexo s  //server 本地服务端<br>hexo d  //deploy 部署命令<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>在浏览器地址栏输入<code>localhost:4000</code>，即可本地预览Hexo博客界面啦~</li>
+</ul>
+<h1 id="step3：部署到GitHub"><a href="#step3：部署到GitHub" class="headerlink" title="step3：部署到GitHub"></a>step3：部署到GitHub</h1><p>👀要想实现其他小伙伴通过一根网线访问你的博客，有两种办法。<br>一是部署到服务器，再通过DNS解析到服务器即可；<br>二是借助Severless服务，在代码托管网站上托管自己的静态页面。<br>根据是否有自己的服务器做选择。</p>
+<blockquote>
+<p>更多Severless服务的相关内容，可见👉<a target="_blank" rel="noopener" href="https://coderly.cn/pages/eb693b/#iaas%E3%80%81paas%E3%80%81saas%E3%80%81faas%E3%80%81baas">Serverless | 技术分享</a></p>
+</blockquote>
+<p>这里介绍托管到Github平台的方法：</p>
+<ol>
+<li>确认自己已注册Github账户</li>
+<li>新建仓库：<code>&lt;username&gt;.github.io</code></li>
+<li>留意仓库的分支，是<code>master</code>还是<code>main</code>，后面配置GitHub deploy会用到</li>
+<li>测试是否成功：仓库内新建<code>index.html</code>文件，随便写入内容，浏览器输入地址<code>&lt;username&gt;.github.io</code>访问，如出现写入的内容则畅通了</li>
+<li>安装git部署的插件<code>hexo-deployer-git</code>，并配置git密钥</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /c/Users/&lt;username&gt;/.ssh  //Windows下SSH密钥的路径，用`Git Bash`打开<br><span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub  //获取本地Git的SSH公钥<br>ssh -T git@git.com  //确认并添加主机到本机SSH可信列表<br></code></pre></td></tr></table></figure>
+
+<p>之后将密钥的内容复制到GitHub的SSH Keys即可</p>
+<p>如本机无git密钥，可通过以下路径生成：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;用户名&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;邮箱地址&quot;</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;上面的邮箱&quot;</span><br></code></pre></td></tr></table></figure>
+
+
+<ol start="6">
+<li>把网页部署到GitHub平台：打开根目录的<code>config.yml</code>文件，定位到<code>deploy: </code>，写入GitHub的部署路径</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs HTML">deploy:<br>  type: git<br>  repo:<br>      github: git@github.com:<span class="hljs-tag">&lt;<span class="hljs-name">username</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">username</span>&gt;</span>.github.io.git,main<br></code></pre></td></tr></table></figure>
+
+
+<h1 id="step4：开始写作"><a href="#step4：开始写作" class="headerlink" title="step4：开始写作"></a>step4：开始写作</h1><p>Hexo支持markdown语法写作，写文章的方法有两种：</p>
+<ul>
+<li>使用命令创建文章：<code>hexo new &lt;filename&gt;</code></li>
+<li>在文件夹<code>./source/_posts</code>内新建<code>&lt;filename&gt;.md</code>文件</li>
+</ul>
+<blockquote>
+<p>特别注意：文件夹<code>./public</code>是GitHub的同步文件夹，每次Hexo三连都会被覆盖、更新，勿在此文件夹内新建任何文件！！（别问我是怎么知道的🤣🤣）</p>
+</blockquote>
+<p>进行到以上四步，基本可以实现发布博客的功能了。如要进阶的操作，可继续往下阅读。</p>
+<p>P.S 因为众所周知的原因，国内访问GitHub不便，网络有时也不畅通，所以建好站后多半还访问不了，详见<a href="#step7%EF%BC%9A%E5%AE%9E%E7%8E%B0%E5%9B%BD%E5%86%85%E7%9A%84%E9%A1%BA%E7%95%85%E8%AE%BF%E9%97%AE">step7</a></p>
+<!--- more --->
+
+<h1 id="进阶操作"><a href="#进阶操作" class="headerlink" title="进阶操作"></a>进阶操作</h1><h2 id="step5：美化你的网站"><a href="#step5：美化你的网站" class="headerlink" title="step5：美化你的网站"></a>step5：美化你的网站</h2><p>Hexo上现有300+的主题，推荐主题<a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/01/30/hexo-theme-zhaoo/">zhaoo</a>（本站建站初使用的主题即是zhaoo），可根据自己的需求调整为喜欢的风格</p>
+<p><strong>安装主题</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean  //先清扫下<br>git <span class="hljs-built_in">clone</span> git@github.com:zhaoo/hexo-theme-zhaoo.git themes/   <br>//把GitHub上的主题文件夹克隆到本地themes文件夹内<br></code></pre></td></tr></table></figure>
+
+<p><strong>启用主题</strong><br>打开根目录的<code>_config.yml</code>文件，定位到<code>theme: </code>栏，把值改为<code>zhaoo</code>，注意冒号后需一个空格，否则会报错</p>
+<p><strong>更新主题</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> themes/zhaoo<br>git pull  //从GitHub获取更新<br></code></pre></td></tr></table></figure>
+
+<p><strong>修改主题</strong><br>详见👉<a href="#step9%EF%BC%9A%E5%B0%8F%E6%8F%92%E6%9B%B2">step9</a></p>
+<blockquote>
+<p>小技巧分享：<br>在根目录新建<code>_config.&lt;主题名&gt;.yml</code>文件（如<code>_config.zhaoo.yml</code>），可对主题的配置进行更改，其被执行的优先级高于主题文件夹内的<code>_config.yml</code>文件</p>
+</blockquote>
+<h2 id="step6：绑定自己的域名"><a href="#step6：绑定自己的域名" class="headerlink" title="step6：绑定自己的域名"></a>step6：绑定自己的域名</h2><p>绑定域名分三步走：</p>
+<ol>
+<li>前往域名绑定的DNS解析服务商处</li>
+<li>把需要绑定的字段（如<code>blog.wuzhiping.top</code>）用<code>CNAME</code>的方式转发到GitHub生成的连接（<code>&lt;username&gt;.github.io</code>）</li>
+<li>GitHub也需要设置，路径为<code>Settings</code>-<code>Pages</code>-<code>Custom domain</code>，把上面的链接填入</li>
+</ol>
+<blockquote>
+<p>注：按上述方法，GitHub会自动帮你在根目录创建一个CNAME文件，但每次<code>hexo d</code>部署后，文件会被清除，因此，这里的做法是在本地文件夹的根目录新建一个CNAME文件，内容写你填入的网址，如<code>blog.wuzhiping.top</code></p>
+</blockquote>
+<h2 id="step7：实现国内的顺畅访问"><a href="#step7：实现国内的顺畅访问" class="headerlink" title="step7：实现国内的顺畅访问"></a>step7：实现国内的顺畅访问</h2><p>秘密武器就是<code>Coding平台</code><br><a target="_blank" rel="noopener" href="https://coding.net/">Coding</a>目前已被腾讯收购，开发者可免费使用代码托管、开发协作等功能。</p>
+<blockquote>
+<p>Coding是一个面向开发者的云端开发平台,提供 Git&#x2F;SVN 代码托管、任务管理、在线 WebIDE、Cloud Studio、开发协作、文件管理、Wiki 管理、提供个人服务及企业版本的服务。</p>
+<p align="right">——官网介绍</p>
+</blockquote>
+<ol>
+<li>导入设置的路径是<code>新建项目</code>-<code>代码仓库</code>-<code>创建代码仓库</code>-<code>导入外部仓库</code>，把GitHub的仓库导入进去</li>
+<li>和GitHub类似，添加SSH Key，通过命令<code>ssh -T git@e.coding.net</code>测试是否通过</li>
+<li>修改站点<code>_config.yml</code>配置文件，加入coding的代码</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs HTML">deploy:<br>  type: git<br>  repo:<br>      github: git@github.com:<span class="hljs-tag">&lt;<span class="hljs-name">username</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">username</span>&gt;</span>.github.io.git,main<br>	  coding: git@e.coding.net:<span class="hljs-tag">&lt;<span class="hljs-name">username</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">projectname</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">reponame</span>&gt;</span>.git,master<br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>部署Hexo静态网页文件</li>
+</ol>
+<ul>
+<li>Hexo一键三连<a href="#step2%EF%BC%9A%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B9%B6%E9%AA%8C%E8%AF%81Hexo">见step2</a></li>
+<li>此时<code>Coding</code>会自动部署，可在仓库的<code>网站托管</code>页面看到给定的网址（很长，建议绑定自己的域名）</li>
+<li>配置<code>Coding</code>（背后的腾讯云）提供的CDN服务，实现国内的加速访问，前六个月免费体验</li>
+</ul>
+<blockquote>
+<p>🎊小彩蛋：<br>此外，还有<code>Vercel</code>、<code>Cloudflare Pages</code>等平台（<code>Gitlab</code>也可部署，缺点是必须是登录用户才能访问生成的网页，不推荐使用；<code>Gitee 码云</code>也可托管，Pages功能目前处在整顿期 ），部署的过程类似于<code>Coding</code><br>国内CDN另一个选项是<a target="_blank" rel="noopener" href="https://www.upyun.com/league">又拍云</a>，加入<code>又拍云联盟</code>，每月纵享15G流量，还是很香的…</p>
+</blockquote>
+<h2 id="step8：异地备份源文件"><a href="#step8：异地备份源文件" class="headerlink" title="step8：异地备份源文件"></a>step8：异地备份源文件</h2><p><code>hexo d</code>的机制是把编译后的静态页面上传到代码托管网站，不包含源文件，因此，为了文件备份，也为了方便远程编译，可以利用git的不同分支管理源文件。</p>
+<ol>
+<li>在GitHub上新建分支<code>source</code>，确认已配置本地的SSH Keys</li>
+<li>本地git库的操作</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init  //初始化本地仓库<br>git remote add origin &lt;仓库地址&gt;  //把本地仓库和远程仓库相连接<br>git branch -m &lt;old_branch&gt; &lt;new_branch&gt;  //修改本地分支<br>git checkout &lt;new_branch&gt;  //确认本地的分支<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li>同步远程仓库</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add .  //选中所有改动的文件（夹）<br>git commit -m <span class="hljs-string">&#x27;several words&#x27;</span>  //提交并文字说明所做的改动<br>git push origin <span class="hljs-built_in">source</span>  //将本地仓库推送到远程的&lt;<span class="hljs-built_in">source</span>&gt;分支<br></code></pre></td></tr></table></figure>
+
+
+<h2 id="step9：小插曲"><a href="#step9：小插曲" class="headerlink" title="step9：小插曲"></a>step9：小插曲</h2><p>参照zhaoo的<a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/">主题配置文档</a>以及<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a>进行个性化设置<br>同时，增加了以下几点的内容。</p>
+<h3 id="引入iconfont阿里巴巴矢量图标库"><a href="#引入iconfont阿里巴巴矢量图标库" class="headerlink" title="引入iconfont阿里巴巴矢量图标库"></a>引入<code>iconfont</code>阿里巴巴矢量图标库</h3><p>新建项目➡把中意的图片加入到<code>我的项目</code>➡复制<code>Font class</code>代码➡在主题的配置文件找到css导入➡把网址如图存放进去，完成导入。</p>
+<img  src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730170512.png"   style="zoom: 67%;" /><span class="image-caption">引入iconfont的css源</span>
+
+<p>以后就可以直接用iconfont项目内的图标了，还可以自定义图标的颜色~</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont icon-youpaiyun_grey&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;&quot;</span><span class="hljs-attr">transform:scale</span>(<span class="hljs-attr">2</span>,<span class="hljs-attr">2</span>);<span class="hljs-attr">color:</span>#<span class="hljs-attr">00A0FF</span>;&quot;&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h3 id="安装博文压缩插件hexo-neat"><a href="#安装博文压缩插件hexo-neat" class="headerlink" title="安装博文压缩插件hexo-neat"></a>安装博文压缩插件<code>hexo-neat</code></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-neat --save<br></code></pre></td></tr></table></figure>
+
+<p>同样在<code>_config.&lt;themename&gt;.yml</code>中修改配置，具体配置可参考👉<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">rozbo&#x2F;hexo-neat</a></p>
+<h3 id="设置首页背景图为轮播"><a href="#设置首页背景图为轮播" class="headerlink" title="设置首页背景图为轮播"></a>设置首页背景图为轮播</h3><p>原理是引入unsplash的图片源进行轮播，每次打开都是新的背景图。</p>
+<p>修改主题配置文件<code>_config.&lt;themename&gt;.yml</code>,定位到<code>preview</code>，修改<code>api: </code>的内容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">api: https://source.unsplash.com/random/1920x1080<br></code></pre></td></tr></table></figure>
+
+<h3 id="修改页脚内容及排版"><a href="#修改页脚内容及排版" class="headerlink" title="修改页脚内容及排版"></a>修改页脚内容及排版</h3><p>找到主题的布局文件夹，编辑页脚源文件：…\layout_partial\components\footer.ejs，从<code>&lt;footer class=&quot;footer&quot;&gt;</code>那一行起，依次增加了<code>项目支持</code>、<code>网站访问统计</code>、<code>CC协议图标</code>的内容</p>
+<details>
+  <summary>点击查看代码</summary>
+  <pre><code>
+    <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!---cc-icons代码引入---&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/css/cc-icons.min.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>  /&gt;</span><br><span class="hljs-comment">&lt;!---cc-icons代码引入---&gt;</span><br><span class="hljs-comment">&lt;!---busuanzi代码引入---&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">async</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-comment">&lt;!---busuanzi代码引入---&gt;</span><br><span class="hljs-comment">&lt;!---fontawesome代码引入---&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css&quot;</span>&gt;</span><br><span class="hljs-comment">&lt;!---fontawesome代码引入---&gt;</span><br>&lt;%<br>  var socialList = &#x27;&#x27;;<br>  for (var i in theme.social) &#123;<br>    var arr = theme.social[i].split(&#x27;||&#x27;);<br>    var url = arr[0];<br>    var iconfont = arr[1];<br>    var color = arr[2] || theme.color.link;<br>    socialList +=<br>      `<span class="hljs-tag">&lt;<span class="hljs-name">a</span></span><br><span class="hljs-tag">        <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;$&#123;url&#125;&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-social-item&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">onMouseOver</span>=<span class="hljs-string">&quot;this.style.color=$&#123;color&#125;&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">onMouseOut</span>=<span class="hljs-string">&quot;this.style.color=&#x27;$&#123;theme.color.text&#125;&#x27;&quot;</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont $&#123;iconfont&#125;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>`;<br>  &#125;<br>%&gt;<br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-social&quot;</span>&gt;</span>&lt;%- socialList %&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  &lt;% if (theme.copyright) &#123; %&gt;<br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer-copyright&quot;</span>&gt;</span>&lt;%- theme.copyright %&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  &lt;% &#125; %&gt;<br><span class="hljs-comment">&lt;!---添加项目支持---&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span><br>    基于 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://hexo.io&quot;</span>&gt;</span>Hexo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> &amp; Theme.<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/izhaoo/hexo-theme-zhaoo&quot;</span>&gt;</span>zhaoo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;nbsp|&amp;nbsp<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;upyun&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral&quot;</span> <span class="hljs-attr">p-id</span>=<span class="hljs-string">&quot;38&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/images/icons/upyun_logo8.png&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10%&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform:translateX(-2px);position:relative;margin-bottom:2px;&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;又拍云CDN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>加速支持<br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-comment">&lt;!---添加项目支持---&gt;</span><br><span class="hljs-comment">&lt;!---网站访问统计---&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont icon-eye&quot;</span>  <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_value_site_pv&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-spinner fa-spin&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;nbsp&amp;nbsp&amp;nbsp<br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont icon-user&quot;</span>  <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_value_site_uv&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-spinner fa-spin&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-comment">&lt;!---网站访问统计---&gt;</span><br><br><span class="hljs-comment">&lt;!---添加CC协议---&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;CC协议&quot;</span><span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cc cc-by-nc-sa&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-size:36px;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-comment">&lt;!---添加CC协议---&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span><br></code></pre></td></tr></table></figure>
+  </code></pre>
+</details>
+
+
+<h2 id="尚待解决"><a href="#尚待解决" class="headerlink" title="尚待解决"></a>尚待解决</h2><p>本条目记录尚待解决的问题。</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 自定义摘要内容，在页面md文档的<code>Front-matter</code>自定义<code>description: </code>，无效。<br><em>Note: 通读主题的模板配置源文件，发现解决方式为在<code>Front-matter</code>中新增<code>excerpt: </code>的内容</em></li>
+<li><input disabled="" type="checkbox"> 调整页面大小，试过了调整主题配置的<code>post_page_size: </code>，无效</li>
+<li><input disabled="" type="checkbox"> 去除页脚的微信图标，试过删除主题配置文件的微信图标代码，无效</li>
+</ul>
+<h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/">主题配置文档 - zhaoo</a></li>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000017986794">博客教程-SegmentFault 思否</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36759224/article/details/100879609?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162660943616780357241206%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=162660943616780357241206&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-5-100879609.first_rank_v2_pc_rank_v29&utm_term=hexo+coding+ssl%E8%AF%81%E4%B9%A6&spm=1018.2226.3001.4187">Hexo 双线部署-CSDN博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.justlovesmile.top/posts/c8972b63.html">Justlovesmile’s BLOG</a></li>
+</ul>
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><ul>
+<li>210720 搭建文章框架，完成初稿</li>
+<li>210729 扩充网站搭建的基础部分</li>
+<li>210730 扩充进阶部分的内容，发布完整版</li>
+</ul>
+
+      </section>
+      <section class="extra">
+        
+          <ul class="copyright">
+  
+    <li><strong>本文作者：</strong>米斯特乌</li>
+    <li><strong>文章标题：</strong>我的一小步 | 如何搭建私人博客</li>
+    <li><strong>本文链接：</strong><a href="https://m.wuzhiping.top/p/ddb3eb57.html" title="https:&#x2F;&#x2F;m.wuzhiping.top&#x2F;p&#x2F;ddb3eb57.html">https:&#x2F;&#x2F;m.wuzhiping.top&#x2F;p&#x2F;ddb3eb57.html</a></li>
+    <li><strong>版权声明：</strong>博客内容采用 <i class="iconfont icon-cc"></i><strong><a target="_blank" title="署名-非商业性使用-相同方式共享 4.0 国际"href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"> BY-NC-SA 4.0</strong></a> 许可协议，转载请注明出处！</li>
+  
+</ul>
+
+        
+        
+          <section class="donate">
+  <div id="qrcode-donate">
+    <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210730151313.png">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont icon-zhifubao1"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont icon-weixinzhifu"></i></a>
+  </div>
+</section>
+
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DNS%E8%A7%A3%E6%9E%90/" rel="tag">DNS解析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo%E6%95%99%E7%A8%8B/" rel="tag">Hexo教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BB%BA%E7%AB%99/" rel="tag">建站</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul> 
+
+        
+  <nav class="nav">
+    <a href="/p/a31a4913.html"><i class="iconfont iconleft"></i>Theme.zhaoo 配置文档</a>
+    <a></a>
+  </nav>
+
+      </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<div id="valine"></div>
+<script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  window.onload = function () {
+    var loadValine = function () {
+      new Valine({
+        el: '#valine',
+        app_id: "mmyjPto4q1jUtbNhcRHq1sdH-gzGzoHsz",
+        app_key: "68nAoGaj8ADpuMOqBEbLPOoW",
+        placeholder: "有什么问题一起交流下吧！",
+        avatar: "robohash",
+        pageSize: "6",
+        lang: "zh-CN",
+        visitor: false, //文章阅读量统计，默认关闭
+        emojiMaps: {
+            "再见": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/再见.png",
+            "呲牙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/呲牙笑.png",
+            "微笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/微笑.png",
+            "亲亲": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/亲亲.png",
+            "愤怒": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/愤怒.png",
+            "惊吓": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惊吓.png",
+            "尴尬": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/尴尬.png",
+            "捂嘴笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/捂嘴笑.png",
+            "捂脸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/捂脸.png",
+            "生病": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/生病.png",
+            "绿帽": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/绿帽.png",
+            "鼓掌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/鼓掌.png",
+            "抠鼻": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/抠鼻.png",
+            "感动": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/感动.png",
+            "吐血": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吐血.png",
+            "鬼脸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/鬼脸.png",
+            "擦汗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/擦汗.png",
+            "惊讶": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惊讶.png",
+            "恶心": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶心.png",
+            "禁言": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/禁言.png",
+            "睡觉": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/睡觉.png",
+            "笑哭": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/笑哭.png",
+            "思考": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/思考.png",
+            "疑问": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/疑问.png",
+            "奋斗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/奋斗.png",
+            "耍酷": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/耍酷.png",
+            "吵架": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吵架.png",
+            "眩晕": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/眩晕.png",
+            "哭泣": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哭泣.png",
+            "开心": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/开心.png",
+            "害羞": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/害羞.png",
+            "喜欢": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/喜欢.png",
+            "烦恼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/烦恼.png",
+            "爆炸": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/爆炸.png",
+            "熬夜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熬夜.png",
+            "吃瓜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吃瓜.png",
+            "阴险": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/阴险.png",
+            "狗头": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头.png",
+            "滑稽": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽.png",
+            "被打": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/被打.png",
+            "哈士奇": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇.png",
+            "大笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/大笑.png",
+            "加班": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/加班.png",
+            "唱歌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/唱歌.png",
+            "纠结": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/纠结.png",
+            "发红包": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/发红包.png",
+            "送福": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/送福.png",
+            "牛年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/牛年进宝.png",
+            "狗头围脖": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头围脖.png",
+            "狗头花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头花.png",
+            "狗头草": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头草.png",
+            "头秃": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/头秃.png",
+            "狗头胖次": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头胖次.png",
+            "我看好你": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/我看好你.png",
+            "好的": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/好的.png",
+            "好奇": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/好奇.png",
+            "偷偷看": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/偷偷看.png",
+            "危险": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/危险.png",
+            "小丑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/小丑.png",
+            "引起不适": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/引起不适.png",
+            "滑稽喝水": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽喝水.png",
+            "熊猫": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫.png",
+            "打牌": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/打牌.png",
+            "哈士奇失去意识": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇失去意识.png",
+            "应援": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/应援.png",
+            "熊猫喜欢": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫喜欢.png",
+            "疼痛": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/疼痛.png",
+            "勉强笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/勉强笑.png",
+            "看穿一切": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/看穿一切.png",
+            "滑稽狂汗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽狂汗.png",
+            "不好意思": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/不好意思.png",
+            "菜狗": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/菜狗.png",
+            "难以置信": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/难以置信.png",
+            "月饼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/月饼.png",
+            "滑稽被子": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽被子.png",
+            "倚墙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/倚墙笑.png",
+            "出家人": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/出家人.png",
+            "菜狗花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/菜狗花.png",
+            "黑线": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/黑线.png",
+            "呦吼": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/呦吼.png",
+            "有没有搞错": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/有没有搞错.png",
+            "打咩": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/打咩.png",
+            "扶额": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/扶额.png",
+            "深思": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/深思.png",
+            "3d眼镜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/3d眼镜.png",
+            "电话": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/电话.png",
+            "托腮": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/托腮.png",
+            "裂开": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/裂开.png",
+            "滑稽柠檬": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽柠檬.png",
+            "伞兵": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/伞兵.png",
+            "胡子": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/胡子.png",
+            "小偷": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/小偷.png",
+            "裂开": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/裂开.png",
+            "智慧的眼神": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/智慧的眼神.png",
+            "滑稽奶茶": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/滑稽奶茶.png",
+            "手机相机": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/手机相机.png",
+            "送花": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/送花.png",
+            "狗头失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头失望.png",
+            "哈士奇失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/哈士奇失望.png",
+            "熊猫失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫失望.png",
+            "失望": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/失望.png",
+            "吃手": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/吃手.png",
+            "嘿哈": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/嘿哈.png",
+            "猪头": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/猪头.png",
+            "LPL": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/LPL.png",
+            "抬眼镜": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/抬眼镜.png",
+            "泪奔": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/泪奔.png",
+            "熊猫意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/熊猫意外.png",
+            "EDG": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/EDG.png",
+            "傻笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/傻笑.png",
+            "狗头意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/狗头意外.png",
+            "拜托": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/拜托.png",
+            "这是啥": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/这是啥.png",
+            "波吉": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/波吉.png",
+            "猪头意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/猪头意外.png",
+            "没招": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/没招.png",
+            "恶魔": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶魔.png",
+            "没招": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/没招.png",
+            "恶魔恐惧": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/恶魔恐惧.png",
+            "惬意": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/惬意.png",
+            "放鞭炮": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/放鞭炮.png",
+            "beluga": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/beluga.png",
+            "老虎意外": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/老虎意外.png",
+            "虎年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/虎年进宝.png",
+            "财神红包": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/财神红包.png",
+            "虎年进宝": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/虎年进宝.png",
+            "痛哭": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/痛哭.png",
+            "尬笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/尬笑.png",
+            "流汗微笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/流汗微笑.png",
+            "整理发型": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/整理发型.png",
+            "击剑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/击剑.png",
+            "缺牙笑": "https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/缺牙笑.png"
+          }
+        // 引入bilibili 的表情包
+          // emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+       // emojiMaps: {
+       //     "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+       //     "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        //    "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        //    "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        //    "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        //    "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+         //   "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+         //   "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+         //   "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+         //   "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+          //  "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+         //   "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+         //   "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+         //   "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+          //  "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+          //  "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+         //   "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+         //   "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+         //   "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+          //  "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+         //   "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+            // ... 更多表情
+        //} 
+      });
+    }
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        loadValine();
+      });
+    } else {
+      loadValine();
+    }
+  };
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article>
+</div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E7%AE%80%E4%BB%8B"><span class="toc-text">Hexo简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#step0%EF%BC%9A%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83"><span class="toc-text">step0：准备环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#step1%EF%BC%9A%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85Hexo"><span class="toc-text">step1：本地安装Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#step2%EF%BC%9A%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B9%B6%E9%AA%8C%E8%AF%81Hexo"><span class="toc-text">step2：初始化并验证Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#step3%EF%BC%9A%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-text">step3：部署到GitHub</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#step4%EF%BC%9A%E5%BC%80%E5%A7%8B%E5%86%99%E4%BD%9C"><span class="toc-text">step4：开始写作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C"><span class="toc-text">进阶操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#step5%EF%BC%9A%E7%BE%8E%E5%8C%96%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99"><span class="toc-text">step5：美化你的网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#step6%EF%BC%9A%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D"><span class="toc-text">step6：绑定自己的域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#step7%EF%BC%9A%E5%AE%9E%E7%8E%B0%E5%9B%BD%E5%86%85%E7%9A%84%E9%A1%BA%E7%95%85%E8%AE%BF%E9%97%AE"><span class="toc-text">step7：实现国内的顺畅访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#step8%EF%BC%9A%E5%BC%82%E5%9C%B0%E5%A4%87%E4%BB%BD%E6%BA%90%E6%96%87%E4%BB%B6"><span class="toc-text">step8：异地备份源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#step9%EF%BC%9A%E5%B0%8F%E6%8F%92%E6%9B%B2"><span class="toc-text">step9：小插曲</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5iconfont%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E7%9F%A2%E9%87%8F%E5%9B%BE%E6%A0%87%E5%BA%93"><span class="toc-text">引入iconfont阿里巴巴矢量图标库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%8D%9A%E6%96%87%E5%8E%8B%E7%BC%A9%E6%8F%92%E4%BB%B6hexo-neat"><span class="toc-text">安装博文压缩插件hexo-neat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E8%83%8C%E6%99%AF%E5%9B%BE%E4%B8%BA%E8%BD%AE%E6%92%AD"><span class="toc-text">设置首页背景图为轮播</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%A1%B5%E8%84%9A%E5%86%85%E5%AE%B9%E5%8F%8A%E6%8E%92%E7%89%88"><span class="toc-text">修改页脚内容及排版</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%9A%E5%BE%85%E8%A7%A3%E5%86%B3"><span class="toc-text">尚待解决</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ref"><span class="toc-text">Ref</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Changelog"><span class="toc-text">Changelog</span></a></li></ol>
+  </aside>
+
+        
+      </div>
+    </div>
+  </div>
+</main>
+  <!---cc-icons代码引入--->
+<link rel="stylesheet" href="/css/cc-icons.min.css" type="text/css"  />
+<!---cc-icons代码引入--->
+
+<!---busuanzi代码引入--->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!---busuanzi代码引入--->
+
+<!---fontawesome代码引入--->
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!---fontawesome代码引入--->
+
+
+
+<footer class="footer">
+  <div class="footer-social"><a
+        href="tencent://message/?Menu=yes&uin=357735006 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a
+        href="javascript:; "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#09BB07'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconwechat-fill "></i>
+      </a><a
+        href="https://github.com/frankwuzp "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#9f7be1'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a
+        href="mailto:me@wuzhiping.top "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#EA5455'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconmail "></i>
+      </a><a
+        href="/atom.xml "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#FD9B00'"
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icon-rss "></i>
+      </a></div>
+  
+    <div class="footer-copyright"><p>&copy2021-2023 <a target="_blank" href="https://m.wuzhiping.top">米斯特乌</a>&nbsp&nbsp&nbsp<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index"><i class="iconfont icon-beian"></i>粤ICP备2021089570号</a></p></div>
+  
+
+<!---添加项目支持--->
+  <p>
+    <div align="center">
+    基于 <a target="_blank" href="https://hexo.io">Hexo</a> & Theme.<a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a>&nbsp|&nbsp<a rel="upyun" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" p-id="38"><img src="/images/icons/upyun_logo8.png" width="10%" height="10%" style="transform:translateX(-2px);position:relative;margin-bottom:2px;" title="又拍云CDN"></a>加速支持
+    </div>
+  </p>
+<!---添加项目支持--->
+
+<!---网站访问统计--->
+  <p>
+    <div align="center">访问量：
+    <i class="iconfont icon-eye"  aria-hidden="true"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa fa-spinner fa-spin" aria-hidden="true">
+      </i>
+    </span>&nbsp&nbsp&nbsp
+      <i class="iconfont icon-user"  aria-hidden="true"></i>
+      <span id="busuanzi_value_site_uv">
+        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+      </span>
+    </div>
+  </p>
+<!---网站访问统计--->
+
+<!--- 添加落款图标 BEGIN --->
+  <div align="center">
+    <!--- 添加CC协议 --->
+    <a target="_blank" title="署名-非商业性使用-相同方式共享" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+      <i class="cc cc-by-nc-sa" aria-hidden="true" style="font-size:36px;"></i>
+    </a>
+    <!--- 添加CC协议 --->
+    <!--- 添加亚洲诚信验证图标 BEGIN --->
+    <span title="TrustAsia 安全签章" id="myssl_seal" onclick="window.open('https://seal.trustasia.com/seal/detail?domain=m.wuzhiping.top','TrustAsia 安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center">
+      <img src="https://cdn.jsdelivr.net/gh/frankwuzp/pic/blog/20210731151039.png" alt="TrustAsia 安全签章" style="width:104px;height:auto;margin-bottom:28px;cursor:pointer">
+    </span>
+    <!--- 添加亚洲诚信验证图标 END --->
+    <!-- IPv6-test.com button BEGIN -->
+    <a target="_blank" href='https://ipv6-test.com/validate.php?url=referer'>
+      <img src='https://ipv6-test.com/button-ipv6-big.png' alt='ipv6 ready' title='ipv6 ready' border='0' style="width:63.5px;height:auto;margin-bottom:28px;cursor:pointer" />
+    </a>
+    <!-- IPv6-test.com button END -->
+  </div>
+<!--- 添加落款图标 END --->
+
+</footer>
+
+  
+    <div class="fab fab-plus">
+  <i class="iconfont iconplus"></i>
+</div>
+
+  <div class="fab fab-like">
+    <i class="iconfont iconheart"></i>
+  </div>
+
+
+  <div class="fab fab-daovoice">
+    <i class="iconfont iconcomment"></i>
+  </div>
+
+
+<div class="fab fab-up">
+  <i class="iconfont iconcaret-up"></i>
+</div>
+  
+  
+    <div class="scrollbar j-scrollbar">
+  <div class="scrollbar-current j-scrollbar-current"></div>
+</div>
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+  
+    <div class="search">
+  <div class="search-container">
+    <div class="search-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <div class="search-input-wrapper">
+      <i class="search-input-icon iconfont iconsearch"></i>
+      <input class="search-input" type="search" id="search-input" placeholder="Search..." autofocus autocomplete="off"
+        autocorrect="off" autocapitalize="off">
+    </div>
+    <div class="search-output" id="search-output"></div>
+  </div>
+</div>
+  
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+  <script>
+  $.getScript("//cdn.jsdelivr.net/npm/leancloud-storage@4.1.0/dist/av-min.js", () => {
+
+    AV.init({
+      appId: 'teK0draJRk9RyykEq31ItyCz-gzGzoHsz',
+      appKey: 'kYrmK1eEXlxPDYbPI5CqkTT4',
+      serverURLs: 'https://leancloud.cn/',
+    });
+
+    const Counter = AV.Object.extend("Counter");
+    const Like = AV.Object.extend("Like");
+
+    const showCount = (Counter) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud-counter").each(async (e) => {
+        const url = $(".leancloud-counter").eq(e).attr('id').trim();
+        const query = new AV.Query("Counter");
+        query.equalTo("words", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud-counter").eq(e).text(count ? count : 0);
+      });
+    }
+
+    const addCount = (Counter) => {
+      const url = $(".leancloud-counter").length === 1 ? $(".leancloud-counter").attr('id').trim() : 'https://m.wuzhiping.top';
+      var query = new Counter;
+      query.save({
+        words: url
+      });
+    }
+
+    const showLike = (Like) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud-like").each(async (e) => {
+        const url = $(".leancloud-like").eq(e).attr('id').trim();
+        const query = new AV.Query("Like");
+        query.equalTo("path", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud-like").eq(e).text(count ? count : 0);
+      });
+    }
+
+    const addLike = (Like) => {
+      const url = $(".leancloud-like").length === 1 ? $(".leancloud-like").attr('id').trim() : 'https://m.wuzhiping.top';
+      var query = new Like;
+      query.save({
+        path: url,
+        nickName: 'Anonymous'
+      });
+      $(".leancloud-like").addClass('islike');
+      $(".fab-like").children(".iconfont").removeClass("iconheart").addClass("iconheart-fill").css("color", "#eb3223");
+      ZHAOO.zui.message({ text: '谢谢你的喜欢~', type: 'success' });
+      setTimeout(() => showLike(Like), 1000);
+    }
+
+    const handleLikeClick = () => {
+      const isLike = $(".leancloud-like").length === 1 && $(".leancloud-like").hasClass('islike') ? true : false;
+      if (isLike) {
+        ZHAOO.zui.message({ text: '小心心不可以收回呢~', type: 'warning' });
+      } else {
+        addLike(Like);
+      }
+    }
+
+    $(function () {
+      addCount(Counter);
+      showCount(Counter);
+      showLike(Like);
+      $(".fab-like").on("click", function () {
+        handleLikeClick();
+      });
+    });
+
+  });
+</script>
+
+
+
+  
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i["DaoVoiceObject"] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    a.charset = "utf-8";
+    m.parentNode.insertBefore(a, m)
+  })(window, document, "script", "https://widget.daovoice.io/widget/0f81ff2f.js", "daovoice")
+  daovoice('init', {
+    app_id: "2a95adcb"
+  }, {
+    launcher: {
+      disableLauncherIcon: true,
+    },
+  });
+  daovoice('update');
+</script>
+
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+  <script defer src='https://hm.baidu.com/hm.js?16f4e30c2f02e4072c9a264f25dd421b'></script>
+
+
+
+
+
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'G-RKGGMVYC3J', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script defer src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</html>
